@@ -50,3 +50,25 @@ for char in string:
     if string.count(char)==1:
         print("char is = ",char)
         break'''
+
+#7.Compute the factorial of a number using while loop
+'''number=int(input("Enter a number = "))
+factorial=1
+while number>0:
+    factorial*=number
+    number-=1
+print(factorial)'''
+
+#8.validate input
+#problem:keep asking the user for input until they enter a number between 1 and 10.
+'''while True:
+    number=int(input("enter a value btw 1 and 10 = "))
+    if 1<=number<=10:
+        print("thanks")
+        break
+    else:
+        print("Invalid number,try again")
+'''
+
+#9.prime number
+
