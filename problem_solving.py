@@ -71,4 +71,24 @@ print(factorial)'''
 '''
 
 #9.prime number
+'''number = 1
+is_prime=True
+if number>1:
+    for i in range(2,number):
+        if(number%i==0):
+            is_prime=False
+            break
+print(is_prime)'''
+
+#10.List unique checker
+#problem: Check if all elements in a list are unique.if a dulicate is found,exit the loop and print the duplicate.
+'''items=['apple','banana','orange','apple','mango']
+unique_item = set()
+for item in items:
+    if item in unique_item:
+        print("Duplicate item",item)
+        break
+    unique_item.add(item)'''
+
+
 
