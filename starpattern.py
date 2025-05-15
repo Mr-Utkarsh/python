@@ -157,4 +157,23 @@
 #     print(" "*(n-i)+" *"*i)
 #     i=i-1
 
-
+#12.
+# *****
+#  ****
+#   ***
+#    **
+#     *
+#    **
+#   ***
+#  ****
+# *****
+# n=int(input("Enter any value="))
+# i=0
+# while i<n: 
+#     print(" "*i+"*"*(n-i))
+#     i=i+1
+# # print(i)
+# i=i-2
+# while i>=0: 
+#     print(" "*i+"*"*(n-i))
+#     i=i-1
