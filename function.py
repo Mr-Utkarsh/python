@@ -135,9 +135,9 @@
 #     a=0
 #     b=1
 #     for i in range(1,number+1): 
+#         c=a+b
 #         if i<number: 
 #             print(a,end=",")
-#             c=a+b
 #             a,b=b,c
 #         else: 
 #             print(a)
