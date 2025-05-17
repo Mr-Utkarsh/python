@@ -144,5 +144,28 @@
 # num=int(input("Enter a number = "))
 # fibonacci(num)
 
+# def is_armstrong(number):
+#     digits = str(number)
+#     power = len(digits)
+#     total = sum(int(digit) ** power for digit in digits)
+#     return total == number
+
+# # Example usage
+# num = int(input("Enter a number: "))
+# if is_armstrong(num):
+#     print(f"{num} is an Armstrong number.")
+# else:
+#     print(f"{num} is not an Armstrong number.")
+
+# def is_palindrome(number):
+#     return str(number) == str(number)[::-1]
+
+# # Example usage
+# num = int(input("Enter a number: "))
+# if is_palindrome(num):
+#     print(f"{num} is a palindrome.")
+# else:
+#     print(f"{num} is not a palindrome.")
+
 
 
