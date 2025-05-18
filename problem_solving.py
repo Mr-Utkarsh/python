@@ -91,4 +91,36 @@ for item in items:
     unique_item.add(item)'''
 
 
+#Restaurant menu
+print("Welcome to Pythonic Restaurant!")
+print("Here is our menu:")
+print("1. Burger - ₹80")
+print("2. Pizza - ₹150")
+print("3. Sandwich - ₹50")
+print("4. Coffee - ₹40")
+print("5. Exit")
+
+total = 0
+
+while True:
+    choice = input("\nEnter the item number you want to order (1-5): ")
+
+    if choice == '1':
+        total += 80
+        print("Burger added to your order. Total =", total)
+    elif choice == '2':
+        total += 150
+        print("Pizza added to your order. Total =", total)
+    elif choice == '3':
+        total += 50
+        print("Sandwich added to your order. Total =", total)
+    elif choice == '4':
+        total += 40
+        print("Coffee added to your order. Total =", total)
+    elif choice == '5':
+        print("\nThank you for ordering!")
+        print("Your final bill is ₹", total)
+        break
+    else:
+        print("Invalid choice. Please select a valid item number.")
 
