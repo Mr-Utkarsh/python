@@ -168,11 +168,23 @@
 #     print(f"{num} is not a palindrome.")
 
 
-from functools import reduce
-l=[11,2,3,4,5,6,7,8,9,10]
-def add5(n):
-    return n+5
-def sum(x,y): 
-    return x+y
-y=reduce(sum,list(map(add5,l)))
-print(y)
+# from functools import reduce
+# l=[11,2,3,4,5,6,7,8,9,10]
+# def add5(n):
+#     return n+5
+# def sum(x,y): 
+#     return x+y
+# y=reduce(sum,list(map(add5,l)))
+# print(y)
+
+# from functools import reduce
+# l=[11,2,3,4,5,6,7,8,9,10]
+# def add5(n):
+#     return n+5
+# def greater5(n): 
+#     if n>5: 
+#         return n
+# def sum(x,y): 
+#     return x+y
+# z=reduce(sum,list(filter(greater5,list(map(add5,l)))))
+# print(z)
