@@ -27,4 +27,40 @@ print(First.__doc__)'''
         print(id(self))
 # obj=First
 obj=First()
-print(id(obj))'''
+print(id(obj))''' 
+
+
+'''class Student: 
+    def __init__(self,name,city,phone): 
+        self.n=name
+        self.c=city
+        self.p=phone
+obj=Student('Utkarsh','Bhopal',93939333993)
+obj1=Student('Siddharth','Bhopal',93939333993)
+obj2=Student('Raj','Bhopal',93939333993)
+print(obj.n,obj.c,obj.p)
+print(obj1.n,obj1.c,obj1.p)
+print(obj2.n,obj2.c,obj2.p)'''
+
+'''Variable:-
+1.Instance variable(object dependent)
+2.class/static variable(object independent )
+3.local variable(scope or block dependent)
+1.INSTANCE VARIABLE:-
+declaration->1.inside class(In-side constructor)
+             2.out-side class(In-side instance method)
+Access->1.In-side class(In-side constructor)
+        2.Out-side class(In-side instance method)'''
+'''
+class Student: 
+    def __init__(self,name,city): 
+        self.n=name   #in-side constructor
+        self.c=city
+        print(self.n,self.c) #access in-side constructor
+    def add(self,phone): 
+        self.p=phone
+        print(self.n,self.c,self.school,self.p)#in-side instance method
+obj=Student('Utkarsh','Bhopal')
+obj.school='Ghss'     #Out-side of the class(declaration)
+obj.add(9292929992292)
+print(obj.n,obj.c,obj.school,obj.p) #access out-side of the class'''
