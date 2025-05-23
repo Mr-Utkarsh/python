@@ -64,3 +64,54 @@ obj=Student('Utkarsh','Bhopal')
 obj.school='Ghss'     #Out-side of the class(declaration)
 obj.add(9292929992292)
 print(obj.n,obj.c,obj.school,obj.p) #access out-side of the class'''
+
+'''2.class/static variable(object independent):-
+declaration->1.inside class body
+             2.in-side constructor
+             3.in-side instance method
+             4.in-side class method
+             5.out-side of the class
+Access->1.In-side constructor
+        2.In-side instance method
+        3.in-side class method(modification)
+        4.out-side of the class'''
+
+'''class Student: 
+    school='SHSS' #declaration inside class body
+    def __init__(self,name): 
+        self.n=name
+obj1=Student('Utkarsh')
+obj2=Student('Siddharth')
+# print(obj1.School)
+# print(obj2.School)
+print(Student.school)'''
+
+'''class Student: 
+    school='SHSS' #declaration inside class body
+    def __init__(self,name): 
+        self.n=name
+        Student.school_code=101 ##declaration inside constructor
+        print(Student.school)
+    def addnew(self):
+        Student.school_city='Bhopal' ##declaration inside instance method
+        print(Student.school,Student.school_code,Student.school_city)
+    def display(self):
+        print(Student.grade)
+Student.grade='10th' ##declaration outside of the class
+obj=Student('Utkarsh')
+obj.addnew()
+obj.display()
+print(Student.school,Student.grade,Student.school_code,Student.school_city)'''
+
+'''3.local variable:-
+
+class Student:
+    def __init__(self,name):
+        grade='10th'
+        self.name=name
+        print(grade)
+    def new(self): 
+        print(grade)
+obj=Student('Utkarsh')
+obj.new()'''
+
