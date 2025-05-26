@@ -115,3 +115,188 @@ class Student:
 obj=Student('Utkarsh')
 obj.new()'''
 
+
+'''Methods:-
+1.Instance
+2.class
+3.static
+
+2.class method'''
+'''class Student: 
+    school='Ghss'
+    grade='10th'
+    def __init__(self,name): 
+        self.n=name
+    def show_details(self): 
+        print(self.n)
+        print(Student.school)
+        print(Student.grade)
+    @classmethod
+    def update_grade(cls,updated): 
+        cls.grade=updated
+obj=Student('Utkarsh')
+obj.show_details()
+Student.update_grade('11th')
+obj2=Student('Siddharth')
+obj2.show_details()'''
+
+'''class Student: 
+    school='Ghss'
+    grade='10th'
+    def __init__(self,name): 
+        self.n=name
+    def show_details(self): 
+        print(self.n)
+        print(Student.school)
+        print(Student.grade)
+        print(Student.city)
+    @classmethod
+    def update_grade(cls,updated): 
+        cls.grade=updated
+    @classmethod
+    def add_new(cls,city): 
+        cls.city=city
+obj=Student('Utkarsh')
+# obj.show_details()
+Student.update_grade('11th')
+obj2=Student('Siddharth')
+# obj2.show_details()
+Student.add_new('Bhopal')
+obj2.show_details()
+'''
+
+'''3.static method
+
+class Student: 
+    school='Ghss'
+    grade='10th'
+    def __init__(self,name): 
+        self.n=name
+    def show_details(self): 
+        print(self.n)
+        print(Student.school)
+        print(Student.grade)
+    @staticmethod
+    def add_new(self,cls,city): 
+        print(self)
+        print(cls)
+        print(city)
+    @staticmethod
+    def welcome(): 
+        print('welcome')
+    @staticmethod
+    def thanks(): 
+        print('thanks')
+Student.welcome()
+obj=Student('Utkarsh')
+obj2=Student('Siddharth')
+Student.add_new('Bhopal','Indore','Jabalpur')
+obj2.show_details()
+Student.thanks()'''
+
+
+'''OOPS PROPERTIES
+
+1.Abstraction
+2.Inheritance
+3.polymorphism
+4.encapsulation'''
+
+'''INHERITANCE
+
+1.SINGLE LEVEL'''
+
+'''class Parent: 
+    x=10
+    def __init__(self,name): 
+        self.name=name
+    def home(self): 
+        print("home from parent class")
+class Child(Parent): 
+    pass
+obj=Child()'''
+
+'''class Parent: 
+    x=10
+    def __init__(self,name): 
+        self.name=name
+    def home(self): 
+        print("home from parent class")
+class Child(Parent): 
+    pass
+obj=Child('Python')
+print(obj.x)
+print(obj.name)
+obj.home()'''
+
+'''class Parent: 
+    x=10
+    def __init__(self,name): 
+        self.name=name
+    def home(self): 
+        print("home from parent class")
+class Child(Parent): 
+    def home(self): 
+        print("home from child class")
+        super().home()
+obj=Child('Python')
+print(obj.x)
+print(obj.name)
+obj.home()'''
+
+'''2.Multi level
+
+class GParent: 
+    def car(self): 
+        print("car from GParent class")
+class Parent(GParent): 
+    x=10
+    def __init__(self,name): 
+        self.name=name
+    def home(self): 
+        print("home from parent class")
+class Child(Parent): 
+    def home(self): 
+        print("home from child class")
+        super().home()
+obj=Child('Python')
+print(obj.x)
+print(obj.name)
+obj.home()
+obj.car()'''
+
+'''class Parent1: 
+    def car(self): 
+        print("car from Parent1 class")
+class Parent2: 
+    x=10
+    def __init__(self,name): 
+        self.name=name
+    def home(self): 
+        print("home from Parent2 class")
+class Child(Parent1,Parent2): 
+    def home(self): 
+        print("home from child class")
+        super().home()
+obj=Child('Python')
+print(obj.x)
+print(obj.name)
+obj.home()
+obj.car()'''
+
+'''class Parent: 
+    x=10
+    def __init__(self,name): 
+        self.name=name
+    def home(self): 
+        print("home from Parent2 class")
+class Child1(Parent): 
+    def home(self): 
+        print("home from child class")
+        super().home()
+class Child2(Parent): 
+    pass
+obj1=Child1('Python')
+obj2=Child2('Java')
+obj.home()
+print(obj1.name,obj2.name)'''
