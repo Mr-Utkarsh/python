@@ -300,3 +300,148 @@ obj1=Child1('Python')
 obj2=Child2('Java')
 obj.home()
 print(obj1.name,obj2.name)'''
+
+'''3.Hybrid level
+Method Resolution Order:-
+
+class A: 
+    def first(self): 
+        print("from class A")
+class B: 
+    def first(self): 
+        print("from class B")
+class C(A): 
+    pass
+class D(B): 
+    pass
+class E(C,D): 
+    pass
+class C(A): 
+    pass
+obj=E()
+obj.first()'''
+
+'''class A: 
+    def first(self): 
+        print("from class A")
+class B: 
+    def first(self): 
+        print("from class B")
+class C(A): 
+    pass
+class D(B): 
+    pass
+class E(D,C): 
+    pass
+class C(A): 
+    pass
+obj=E()
+obj.first()'''
+
+# ABSTRACTIION
+
+'''from abc import ABC,abstractmethod
+class Senior(ABC): 
+    def add(self,x,y): 
+        print(x+y)
+    def sub(self,x,y): 
+        print(x-y)
+    def multi(self,x,y): 
+        print(x*y)
+    @abstractmethod
+    def div(self,x,y): 
+        pass
+class Junior(Senior): 
+    def div1(self,x,y): 
+        print(x/y)
+obj=Junior()'''
+
+'''from abc import ABC,abstractmethod
+class Senior(ABC): 
+    def add(self,x,y): 
+        print(x+y)
+    def sub(self,x,y): 
+        print(x-y)
+    def multi(self,x,y): 
+        print(x*y)
+    @abstractmethod
+    def div(self,x,y): 
+        pass
+class Junior(Senior): 
+    def div(self,x,y): 
+        print(x/y)
+obj=Junior()
+obj.add(2,3)
+obj.sub(6,3)
+obj.multi(2,3)
+obj.div(4,2)'''
+
+# Encapsulation
+
+'''class P: 
+    x=10
+    def show(self): 
+        print("from p class")
+class C(P): 
+    pass
+obj=C()
+print(obj.x)
+print(obj.show())'''
+
+'''class P: 
+    _x=10
+    def _show(self): 
+        print("from p class")
+class C(P): 
+    pass
+obj=C()
+print(obj._x)
+print(obj._show())'''
+
+'''class P: 
+    __x=10
+    def __show(self): 
+        print("from p class")
+class C(P): 
+    pass
+obj=C()
+print(obj.__x)
+print(obj.__show())'''
+
+'''class P: 
+    __x=10
+    def __show(self): 
+        print("from p class")
+class C(P): 
+    print(P.__x)
+obj=C()
+# print(obj.__x)
+# print(obj.__show())'''
+
+'''class P: 
+    __x=10
+    def __show(self): 
+        print("from p class")
+class C(P): 
+    pass
+print(dir(C))'''
+
+'''class P: 
+    __x=10
+    def __show(self): 
+        print("from p class")
+class C(P): 
+    pass
+print(dir(C))
+obj=C()
+print(obj._P__show())'''
+
+'''class P: 
+    __x=10
+    def __show(self): 
+        print("from p class")
+class C(P): 
+    pass
+print(dir(C))
+obj=C()
+obj._P__show()'''
