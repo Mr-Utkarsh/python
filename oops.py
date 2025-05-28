@@ -434,7 +434,7 @@ class C(P):
     pass
 print(dir(C))
 obj=C()
-print(obj._P__show())'''
+print(obj._P__show())''' 
 
 '''class P: 
     __x=10
@@ -445,3 +445,14 @@ class C(P):
 print(dir(C))
 obj=C()
 obj._P__show()'''
+
+'''l=[10,2,4,6,8,20]
+length=len(l)
+new_l=length-2
+# print(new_l)
+for i in range(0,new_l):
+    if l[i]<l[i+1]:
+        pass
+    else:
+        l[i],l[i+1]=l[i+1],l[i]
+print(l)'''
