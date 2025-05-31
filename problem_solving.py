@@ -92,7 +92,7 @@ for item in items:
 
 
 #Restaurant menu
-print("Welcome to Pythonic Restaurant!")
+'''print("Welcome to Pythonic Restaurant!")
 print("Here is our menu:")
 print("1. Burger - ₹80")
 print("2. Pizza - ₹150")
@@ -124,3 +124,21 @@ while True:
     else:
         print("Invalid choice. Please select a valid item number.")
 
+'''
+
+'''n=int(input("Enter the number of rows: "))
+for i in range(0,n+1):
+print(" "*(n-i),"*"*i)
+for i in range(n,0,
+-1):
+print("*"*i,
+" "*(n-i))
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+# * * * *
+# * * *
+# * *
+# *'''
