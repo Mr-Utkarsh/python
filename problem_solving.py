@@ -361,3 +361,26 @@ print("*"*i,
 # while i>=0: 
 #     print(" "*i+"*"*(n-i))
 #     i=i-1 
+
+# perfect number
+'''n=int(input("Enter any no:"))
+sum = 0
+for i in range(1,n):
+    if n%i==0:
+        sum=sum+i
+if n==sum:
+    print(f'given number {n} is a perfect number')
+else:
+    print(f'given number {n} is not a perfect number')'''
+
+# WAP to arrenge all zeroes at the end.
+'''l = [2,0,3,0,1,0,5] # [2,3,1,5,0,0,0]
+l1=[]
+for i in l:
+    if i !=0:
+        l1.append(i)
+    n = len(l)-len(l1)
+for i in range(n):
+    l1.append(0)
+print(l1)'''
+
